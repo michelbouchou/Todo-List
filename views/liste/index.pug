@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title Liste
+  body
+    button(type='button') Nouvelle todo
+    each message, completion, created_at, updated_at in #{liste}
+      div
+        p Todo : + message
+        p Etat : + completion
+        p Created at : + created_at
+        p Updated at : + updated_at

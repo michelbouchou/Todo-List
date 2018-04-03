@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title New message
+  body
+    form(action='/todos', method='post')
+      label(for='message') Enter message: 
+      input#message(type='text', name='message_field')
+      label(for='completion') Completion
+      select#completion(name='completion_field')
+        option(value='todo') To do
+        option(value='doing') Doing
+        option(value='done') Done
+      input(type='submit', value='OK')
